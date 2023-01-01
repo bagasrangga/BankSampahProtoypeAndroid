@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daftar_Activity"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lengkapi form dibawah ini"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/salma_light"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textColor="@color/black"
+        android:fontFamily="@font/salma_light"
+        android:textSize="19dp"
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g Andra Ramadhan"
+        android:fontFamily="@font/salma_lightitalic"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:fontFamily="@font/salma_light"
+        android:textSize="19dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g andra@gmail.com"
+        android:fontFamily="@font/salma_lightitalic"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Ponsel"
+        android:textColor="@color/black"
+        android:fontFamily="@font/salma_light"
+        android:textSize="19dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="08xxxxxxxxxx"
+        android:fontFamily="@font/salma_lightitalic"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textColor="@color/black"
+        android:fontFamily="@font/salma_light"
+        android:textSize="19dp"
+        android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="RT"
+                android:textAlignment="center"
+                android:fontFamily="@font/salma_lightitalic"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="RW"
+                android:textAlignment="center"
+                android:fontFamily="@font/salma_lightitalic"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="No. Rumah"
+                android:textAlignment="center"
+                android:fontFamily="@font/salma_lightitalic"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Untuk sementara ini cakupan Bank Sampah Lintas Winongo hanya tersedia di Kelurahan Bumijo"
+        android:fontFamily="@font/salma_lightitalic"
+        android:textSize="14dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btndaftarform"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/salma_light"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginTop="160dp"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

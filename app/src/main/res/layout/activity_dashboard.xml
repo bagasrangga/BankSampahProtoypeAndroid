@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dashboard">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Selamat datang,"
+        android:fontFamily="@font/salma_light"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Bagas Rangga"
+        android:fontFamily="@font/salma_light"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+        <!--SHAPE BOX-->
+    <!--    END OF SHAPE BOX-->
+
+<!--    BOX SALDO DAN FITUR-->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/box"
+        android:elevation="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/salma_light"
+            android:textStyle="italic"
+            android:text="Saldo sampah anda saat ini,"
+            android:textSize="15dp" />
+
+        <!--            LAYOUT SALDO-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_wallet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/salma_light"
+                android:text="Rp 50.000"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--            END OF LAYOUT SALDO-->
+        <!--        LINE-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:background="@color/underline" />
+        <!--            END OF LINE-->
+
+        <!--            LAYOUT HORIZONTAL FITUR-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <!--                 LAYOUT VERTICAL MENU PULSA-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_pulsa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/salma_light"
+                    android:text="Pulsa"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <!--                  END OF LAYOUT VERTICAL MENU PULSA-->
+
+            <!--                 LAYOUT VERTICAL MENU PAKET DATA-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_pulsa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/salma_light"
+                    android:text="Paket Data"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <!--                END OF LAYOUT VERTICAL MENU PAKET DATA-->
+
+            <!--                 LAYOUT VERTICAL MENU PAKET DATA-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_wd" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/salma_light"
+                    android:text="Tarik Saldo"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <!--                END OF LAYOUT VERTICAL MENU PAKET DATA-->
+
+        </LinearLayout>
+        <!--            END OF LAYOUT HORIZONTAL FITUR-->
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Mulai Menabung Sampah!"
+        android:textAllCaps="false"
+        android:fontFamily="@font/salma_light"
+        android:background="@drawable/box"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+<!--    END OF TABUNG SAMPAH-->
+
+<!--    START SCROLLVIEW-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginTop="20dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+<!--                LAYOUT UNTUK KUMPULAN CARD-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+<!--                    STRAT OF CARD 1-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardOne"
+                        android:layout_width="320dp"
+                        android:layout_height="130dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="8dp"
+                        android:elevation="15dp"
+                        app:cardCornerRadius="10dp">
+
+<!--                        START OF LAYOUT ISI CARD 1-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_margin="17dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Apa itu bank sampah?"
+                                android:fontFamily="@font/salma_light"
+                                android:textColor="@color/black"
+                                android:textSize="19dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/header_1"/>
+                        </LinearLayout>
+<!--                            END OF LAYOUT ISI CARD 1-->
+                    </androidx.cardview.widget.CardView>
+<!--                    END OF CARD 1-->
+
+<!--                    STRAT OF CARD 2-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardTwo"
+                        android:layout_width="320dp"
+                        android:layout_height="130dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="8dp"
+                        android:elevation="15dp"
+                        app:cardCornerRadius="10dp">
+
+<!--                        START OF LAYOUT ISI CARD 2-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_margin="17dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Cara menggunakan aplikasi?"
+                                android:fontFamily="@font/salma_light"
+                                android:textColor="@color/black"
+                                android:textSize="19dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/header_2"/>
+                        </LinearLayout>
+<!--                            END OF LAYOUT ISI CARD 2-->
+                    </androidx.cardview.widget.CardView>
+<!--                    END OF CARD 2-->
+
+<!--                    STRAT OF CARD 3-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardThree"
+                        android:layout_width="320dp"
+                        android:layout_height="130dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="8dp"
+                        android:elevation="15dp"
+                        app:cardCornerRadius="10dp">
+
+<!--                        START OF LAYOUT ISI CARD 3-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_margin="17dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Cara menggunakan aplikasi"
+                                android:fontFamily="@font/salma_light"
+                                android:textColor="@color/black"
+                                android:textSize="19dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/header_2"/>
+                        </LinearLayout>
+<!--                            END OF LAYOUT ISI CARD 3-->
+                    </androidx.cardview.widget.CardView>
+<!--                    END OF CARD 3-->
+
+<!--                    STRAT OF CARD 4-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardFour"
+                        android:layout_width="320dp"
+                        android:layout_height="130dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="8dp"
+                        android:elevation="15dp"
+                        app:cardCornerRadius="10dp">
+
+<!--                        START OF LAYOUT ISI CARD 4-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_margin="17dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Cara mencairkan saldo sampah"
+                                android:fontFamily="@font/salma_light"
+                                android:textColor="@color/black"
+                                android:textSize="19dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/header_4"/>
+                        </LinearLayout>
+<!--                            END OF LAYOUT ISI CARD 4-->
+                    </androidx.cardview.widget.CardView>
+<!--                    END OF CARD 4-->
+
+                </LinearLayout>
+<!--                END OF LAYOUT UNTUK KUMPULAN CARD-->
+
+            </HorizontalScrollView>
+
+
+
+    </ScrollView>
+<!--    END OF SCROLLVIEW-->
+
+
+
+
+
+
+</LinearLayout>
